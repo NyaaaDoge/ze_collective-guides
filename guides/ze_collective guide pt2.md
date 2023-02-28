@@ -14,7 +14,7 @@ This guide by [NyaaaDoge](https://steamcommunity.com/id/NyaaaDoge/) (STEAM_1:1:5
     - [7.2 事件列表](#72-事件列表)
   - [8. 地图物品](#8-地图物品)
     - [8.1 (未翻译)人类物品 HUMAN](#81-未翻译人类物品-human)
-    - [8.2 (未翻译)僵尸物品 ZOMBIE](#82-未翻译僵尸物品-zombie)
+    - [8.2 僵尸物品 ZOMBIE](#82-僵尸物品-zombie)
   - [9. 陷阱地块](#9-陷阱地块)
     - [9.1 Traps spawn](#91-traps-spawn)
     - [9.2 Traps vicinity](#92-traps-vicinity)
@@ -69,7 +69,7 @@ Finale的主题是混乱的，它糅合了所有的主题。
 事件发生之后会有一个 事件CD ，这个 事件CD 值会在0~5之间随机生成，同时每通过一个关卡之后会让事件CD-1直至归零。
 
 举个例子，比如玩家在stage 4，stage 4的事件刷新保底概率是30%，我在开头生成的第一个小关卡没有产生事件，则会往这个概率上面累加10%，从而在生成下一个关卡的时候会有40%的概率随机产生一个事件，事件也有其他因素影响比如关卡的性能开销等。然后如果在下一个关卡没有产生事件，还是继续往这个概率栈里面累加10%，这时再生成下一个关卡产生事件的概率将会变成50%，一直到有事件发生为止。事件发生后，会产生相应的事件CD（stage4为0~3个关卡），在这个事件CD内产生的关卡通常情况下都不会再产生新的事件，并且每通过一个关卡让这个事件CD-1直到其变为0。  
-*可以简单理解为现在大部分游戏的抽卡机制*
+*可以简单理解为现在大部分游戏的抽卡保底机制*
 
 ### 7.2 事件列表  
 
@@ -123,8 +123,7 @@ Finale的主题是混乱的，它糅合了所有的主题。
 人类手雷暂时获得增益40s，期间手雷变成大脸 ~~(和天降大脸一个模型VAUFF)~~ ，每颗雷对僵尸造成5000伤害，手雷伤害范围增大，也会有高击退效果。对Boss也能造成5000伤害，同时会有60%的几率眩晕Boss 5s。
 - **DOORHUG BOMB**  
 ![DOORHUGBOMB](images/DOORHUGBOMB.png)  
-*贴门炸弹，断后最爱，1点2秒，谁敢贴门？*  
-通常只会在下张地图生成的时候产生该事件，左下角提示出现1.2s后爆炸，贴近伤害很高。聪明的人贴门都会离终点光圈至少2格远以上，虽然还是会受到些许伤害，但没有那么致命。
+贴门炸弹，通常只会在下张地图生成的时候产生该事件，左下角提示出现1.2s后爆炸，贴近伤害很高。聪明的人贴门都会离终点光圈至少2格远以上，虽然还是会受到些许伤害，但没有那么致命。
 *断后部队不要怕，死的都是贴门的*
 - **DISTORT**  
 ![DISTORT](images/DISTORT.png)  
@@ -138,207 +137,242 @@ Finale的主题是混乱的，它糅合了所有的主题。
 
 ### 8.1 (未翻译)人类物品 HUMAN
 
-- **dragonslayer(`0s`)**  
-It was too big to be called a sword...  
-Use it while falling to downslash  
-Using it puts a strain on your body  
-You cannot use it while too weak (`5hp`)  
-Blood-buildup makes it heavier to wield  
-WaterCrystal can wash the blood off  
-FireCrystal can make it temporarily stronger  
-- **baguette(`0s`)**  
-Hold zombies back with wide swings  
-The swings hurts+pushes zombies (and hurts itself)The baguette eventually breaks by too much damage  
-(break-chance stacks by `0.10%` for each swing-hit)  
-(break-chance stacks by `0.50%` for each swing-miss)  
-A watercrystal can set the break-chance to `-15.00%`  
-Can hurt/stun boss  
-- **minislots(`1s`)**  
-A portable slotmachine to gamble on-the-go  
-Win chance: `5.00%`  
-Lose: lose `7hp`  
-Win: gain `42hp`  
-- **billnye(`1x`)**  
-Show nearby zombies a Bill Nye VHS  
-Keep class distracted while you laze off  
-Their attention gets drawn to the TV  
-It lasts for `14s`  
-Can stun boss  
+- **屠龙巨剑(`0s`)**  
+它太过巨大，以至于难以称之为一把剑……  
+在下落时攻击，可以使出劈斩攻击  
+使用它会对你的身体造成损伤  
+当你的体力太弱 (`5hp`) 时，会无法继续使用它  
+血液积聚附着使其沉重，难以挥舞战斗  
+水元素水晶可以洗去巨剑上的血迹  
+火元素水晶可以使其暂时增强  
+
+- **法式长棍面包(`0s`)**  
+挥舞法棍以阻止僵尸靠近  
+每次挥舞都会推开并且伤害僵尸（同时也会损坏自身）法棍最终会因过度受损而断裂  
+（每次挥舞命中增加 `0.10%` 的断裂概率）  
+（每次挥舞未命中增加 `0.50%` 的断裂概率）  
+水元素水晶可以将破裂概率设置为 `-15.00%`  
+可以伤害/眩晕Boss  
+
+- **迷你老虎机(`1s`)**  
+一个便携老虎机，随时随地可供游玩  
+获胜概率：`5.00%`  
+失败：减少`7hp`  
+获胜：增加`42hp`  
+
+- **比尔·奈(`1x`)**  
+向周围的僵尸播放比尔·奈[^Bill_Nye]的VHS[^VHS]  
+懒懒散散的人还是继续在课上走神吧  
+他们的注意力会被吸引到电视上  
+持续`14s`  
+可以眩晕Boss  
 *[Bill Nye The Science Guy - Theme](https://youtu.be/nDN7M0J3HXc?t=16)*  
 
-- **peanutbutter(`5s|10x`)**  
-Smear out a plane of peanut butter  
-It slows zombies heavily for `6s` on-touch  
-The smear lasts `15s`  
-The same smear can't slow the same zombie twice  
-The slowdown stacks  
-Can hurt/stun boss on-spawn  
-- **claymore(`10x`)**  
-Plant claymores in front of you  
-They blow up when zombies go in front  
-They hurt, burn and stop zombies  
-Can hurt/stun boss  
-FireCrystal can stack-buff its damage  
-- **piggyback(1 seat)**  
-Allows a human to piggyback on you(they must press E on the saddle to get on/off)  
-If you die/drop the knife, the player gets forced off  
-The rider gets a jump/velocity-boost when getting off  
-(allowing for a yoshi/boost-jump)Give someone a joyride!  
-- **hackerman(`1x`)**  
-Gain 10s of aim-hacking + infinite ammo  
-Just keep firing and get kill after kill  
-Nearby/targeted zombies become 1-hit  
-Nearby zombies get wallhack-marked  
-Can hurt/stun boss  
-- **bhop_steroids(`30.00f`)**  
-Inject yourself with steroids  
-for automatic bunnyhopping!  
-Limited/fuel-like usage  
-Toggle it on/off with +use/E  
-`2.00f` insta-drains on each activation  
-You can clear a 4-tile gap from the edge  
+[^Bill_Nye]: Bill Nye（全名William Sanford Nye）是一位美国科学家、工程师、教育家和电视名人，被称为“科学家先生”。他在90年代主持的科学教育电视节目[《Bill Nye the Science Guy》](https://zh.wikipedia.org/wiki/%E6%AF%94%E7%88%BE%E6%95%99%E7%A7%91%E5%AD%B8)在美国和其他地区广受欢迎，该节目旨在为年轻观众介绍科学概念和实验。Bill Nye在科学普及和科学教育方面做出了许多贡献，他经常在电视上和公众场合演讲，以鼓励年轻人对科学感兴趣并学习科学知识。
+
+[^VHS]: [家用录像系统](https://zh.wikipedia.org/wiki/%E5%AE%B6%E7%94%A8%E5%BD%95%E5%83%8F%E7%B3%BB%E7%BB%9F) （英语：video home system，简写为VHS），是由日本JVC公司在1976年开发的一种家用录像机录制和播放标准。
+
+- **花生酱(`5s|10x`)**  
+涂抹上一层花生酱  
+僵尸接触时会大量减速，持续`6s`  
+一块花生酱涂抹持续`15s`  
+同一块花生酱不能减速同一个僵尸两次  
+减速效果可以叠加  
+可以在生成时伤害/眩晕Boss  
+
+- **阔剑地雷(`10x`)**  
+在你的面前部署阔剑地雷  
+僵尸靠近阔剑地雷前方会爆炸  
+阔剑地雷可以伤害、点燃和阻碍僵尸前进  
+可以伤害/眩晕Boss  
+火元素水晶可以增加它的伤害  
+
+- **背人椅(1 座位)**  
+允许背一个人在你身上(他们必须对鞍座按下E来上/下鞍)  
+如果你死亡/丢掉匕首，乘客会被迫离开  
+乘客下鞍时会获得一个跳跃/加速度提升  
+(可以以此进行一个类似于“耀西二段跳/boost-jump”的跳跃)给人一段愉快的载人兜风之旅！  
+
+- **骇客侠(`1x`)**  
+获得10秒的自瞄+无限弹药  
+只需不断射击就能轻松获得一次次的击杀  
+附近/瞄准的僵尸成为一击必杀  
+附近的僵尸会被透视功能标记  
+可以伤害/眩晕Boss  
+
+- **Bhop激素(`30.00f`)**  
+为自己注射激素，实现自动连跳！  
+有限的剂量导致其有使用限制  
+使用 +use/E 来开关  
+每次激活使用将消耗`2.00f`  
+你可以用它一次越过四个地块远的距离  
 *[=) i´m not phoon =)](https://youtu.be/SNvDUO42Hys?t=35)*  
-- **planetcrystal(`1x`)**  
-  1. EarthCrystal  
-Spawns a wall just in front of you  
-3 tiles wide, 2 tiles tall, stays up for `12s`  
-Auto-breaks by certain human touches (anti-grief)  
-Auto-breaks near main-teleport  
-Can hurt/stun boss  
-  2. FireCrystal  
-Damage heavily + set zombies on fire for `10s`  
-It also slows zombies slightly for `3s`  
-The fire shoots out towards your front  
-It also stops the zombie-velocity on-first-touch  
-Can hurt/stun boss  
-  3. WindCrystal  
-Push zombies back with a single wind gust  
-The wind shoots out towards your front  
-It's active/stationary for `2s`  
-Cancels z-gust projectiles  
-Can hurt/stun boss  
-  4. WaterCrystal  
-Stop + slow zombies heavily for `10s`  
-The water shoots out towards your front  
-It deals no damage, only slowdown  
-Can hurt/stun boss  
-- **rift(`1x`)**  
-Create a shortcut portal  
-1st use: create entry portal (big)  
-2nd use: create destination portal (small)  
-Portal clears `100s` from 1st use / Z-touch  
-Use it to help your defenders get back safely  
-2nd use cannot be used over gaps  
-- **storm blade(`150s`)**  
-Freeze and weaken zombies with a dimension-breaking slice  
-Z-hp gets reduced to `2%` of their current health  
-It only freezes nearby zombies the first moment on-use  
-Once the post-cut hp-cap hits, nearby z's gets slowed for `15s`  
-Can hurt/stun boss  
-*[I AM THE STORM THAT IS APPROACHING](https://www.youtube.com/watch?v=NOZONW-UK0w)*  
-- **heal orb(`1x`)**  
-Places out a healing orb  
-It heals `9hp` every `0.50s`(up to `150hp`)  
-The orb lasts for `15s`  
-The orb provides infinite ammo  
-The orb provides +1 nade (once)  
-通常情况下如果奶球不存在会在下一个关卡刷出来，即使用完了拿在身上也会判定为奶球存在  
-- **moonboost(`1s`)**  
-Gives an upwards boost  
-Combine it with jumping for extra height  
 
-特殊物品 卡丁车：  
-kart(CONTROL BY MOUSE ONLY):  
-Look upwards/center-height to accelerate  
-Look downwards to slow down  
-Look sideways to turn [relative to kart-rotation]  
-Look straight down to get off[Locked for RACE ending]  
+- **星球水晶(`1x`)**  
+  1. 土元素水晶  
+在你的面前生成一面墙  
+3格宽、2格高，持续`12s`  
+有人类在墙里面会自动破坏该墙壁格子(防滥用)  
+接近主传送点时会被自动破坏  
+可以伤害/眩晕boss  
 
-### 8.2 (未翻译)僵尸物品 ZOMBIE
+  1. 火元素水晶  
+造成大量伤害并点燃僵尸`10s`  
+同时轻微减速僵尸`3s`  
+火焰会朝你的前方喷射  
+当僵尸首次接触火焰时会立即减速  
+可以伤害/眩晕Boss  
+
+  1. 风元素水晶  
+用一股强风推开僵尸  
+这道风会朝你的前方喷射  
+持续时间为`2s`  
+可以打断僵尸风[^z-gust]的投射物  
+可以伤害/眩晕Boss  
+
+  1. 水元素水晶  
+使僵尸瞬间减速并大幅减速僵尸`10s`  
+水会朝你的前方喷射  
+它并不会造成伤害，仅有减速效果  
+可以伤害/眩晕Boss  
+
+- **维度裂隙(`1x`)**  
+创造一个传送门捷径  
+第一次使用：创建入口传送门（大）  
+第二次使用：创建终点传送门（小）  
+传送门会在第一次使用或被僵尸碰触`100s`后消失  
+使用它来帮助你的断后部队安全撤退  
+不能在断口中间第二次使用来创造出口  
+
+- **风暴之刃(`150s`)**  
+使用跨维度的次元斩击定格和削弱僵尸  
+僵尸的生命值降至当前值的`2%`  
+它只会在使用的第一时间内定格其附近的僵尸  
+当次元斩结束后，僵尸的生命值下降，同时附近的僵尸会被减速`15s`  
+可以伤害/眩晕Boss  
+*[I AM THE STORM THAT IS APPROACHING](https://youtu.be/NOZONW-UK0w?t=24)*  
+
+- **治愈球(`1x`)**  
+产生一个治愈球罩  
+每`0.50s`治愈`9hp`(最多至`150hp`)  
+治愈球持续`15s`  
+提供无限弹药  
+提供一颗手雷（仅一次）  
+*通常情况下如果奶球不存在会在下一个关卡刷出来，即使用完了拿在身上也会判定为奶球存在*  
+
+- **月球靴(`1s`)**  
+施加一个垂直向上的推力  
+可以结合跳跃来到达格外高的地方  
+
+- **特殊物品 卡丁车**  
+操作方法(仅限鼠标操作)：
+
+  - 向最头顶看可以跳跃
+  - 向上看/高于中心高度加速
+  - 向下看减速
+  - 向侧面看转向[以自身卡丁车为中心旋转]
+  - 向最底下看下车
+
+[^z-gust]: 原文为 Cancels z-gust projectiles
+
+### 8.2 僵尸物品 ZOMBIE
 
 通常情况下僵尸物品都会有一个仅限母体僵尸获取的锁定时间，所以母体僵尸可以有更快拿到物品的权利。这个锁定时间在任意僵尸触碰时就会开始计算。  
 
-- **squid(`1x`)**  
-Throw a squid that inks on floor-impact  
-It throws towards your look-direction  
-It can also bounce on walls  
-Blinds and slows nearby humans from the impact  
-Inked humans (`10s`) can't use items  
-- **pizzabaker(`10s|3x`)**  
-Spawns a pizza-projectile in your look-direction  
-It instakills humans on-touch  
-It goes through walls  
-- **fling(`1x`)**  
-Flings humans away from you  
-Push them off edges  
-Or fling away their defenses  
-- **bomb chuck(`10s|3x`)**  
-Throw a bomb that blows up after `5s`  
-It throws towards your look-direction  
-Deals AOE/explosive damage  
-- **roar(`1x`)**  
-Push nearby zombies forward with a roar  
-The push goes towards your side-look-direction  
-Surprise the human defenses!  
-It also heals you nearby zombies to `10000hp`  
-- **greasy fingers(`1x`)**  
-Makes nearby humans drop their held weapons(for `2 seconds`)  
-You get one chance, use it wisely  
-- **poise(`1x`)**  
-Gives `1.50s` invincibility on-use  
-Human items/bullets can't affect you  
-Nearby humans also get frozen by fear briefly  
-15x forward-moving illusion-copies spawn too  
-Time it wisely, you only have one shot  
-- **flight(`1x`)**  
-Gives you wings to fly with until you die  
-You get capped to `500hp`  
-Humans you infect get TP'd back  
-You TP back when too close to triggering current-stage end  
-Fly by looking around and using WASD  
-(you have slow momentum)  
-- **gust(`10s|5x`)**  
-Spawns a gust-projectile in your look-direction  
-The gust pushes humans away  
-It goes through walls  
-- **puller(`10s|5x`)**  
-Spawns a long, thin beam in your look-direction  
-The beam pulls humans towards you  
-It pulls after `2s`  
-It deals `21dmg` on-pull  
-- **stone(`3s|10x`)**  
-Throw a stone that damages humans  
-It throws towards your look-direction  
-Deals `29 damage` on-hit  
-- **impostor(`1x`)**  
-Take human form for `15s`  
-You teleport to a random human on-use(with `5s` invincibility)  
-You cannot infect humans while in human form  
-(humans can damage you though)  
-Once your form reverts you can infect humans  
-(infected humans get TP'd back)  
-Your hp is dynamically capped until you die  
-- **destructo hammer(`3s|5x`)**  
-Break map tile(s) just in front of you  
-(short radius, be accurate!)  
-Destroys nearby human items  
-Deals slight AoE-damage to humans  
-Hit map tile(s) turn red and fall after `7s`  
-Jumping through the broken tile-area slows Z's heavily for `10s`(slow-trigger disappears `7s` after the tile falls)  
-Unusable during the early finale  
-- **rift(`1x`)**  
-Create a shortcut portal  
-1st use: create destination portal (small)  
-2nd use: create entry portal (big)  
-Portal clears `100s` from 1st use  
-Use it to help your zombie teammates ahead  
-1st use cannot be used over gaps  
-Entry becomes locked when too close to main-TP  
+- **鱿鱼(`1x`)**  
+投出一只鱿鱼，击中地面后会喷墨  
+鱿鱼会沿着你的视线方向扔出  
+它也可以在墙上弹射  
+喷墨会致盲和减速附近的人类  
+被喷墨的人类 (`10s`) 无法使用物品  
+
+- **披萨烘焙师(`10s|3x`)**  
+在你的视线方向生成一块披萨  
+接触到人类会一击必杀  
+披萨能穿过墙  
+*[THE PIZZA IS AGGRESSIVE](https://youtu.be/LB871SVYMhI?t=49)*  
+
+- **投掷手(`1x`)**  
+将人类从你身边大力投掷开  
+把他们推下地图边缘  
+或者把他们从防守点中投掷出来  
+
+- **投弹手(`10s|3x`)**  
+扔出一个炸弹，在 `5s` 后爆炸  
+炸弹沿着你的视线方向投出  
+造成 AOE/爆炸伤害  
+
+- **咆哮(`1x`)**  
+用咆哮将附近的僵尸向前推  
+推力沿着你的面视的方向推  
+出其不意地攻击人类防线！  
+它也能治疗你附近的僵尸，使其恢复至 `10000hp`  
+
+- **油滑手指(`1x`)**  
+使附近的人类掉落手中的武器（持续`2s`）  
+你只有一次机会，善加利用吧  
+
+- **强韧(`1x`)**  
+使用后给予僵尸`1.50s`的无敌状态  
+人类的物品/子弹无法对你造成影响  
+附近的人也会被恐惧片刻无法行动  
+同时还会生成15个向前移动的僵尸幻象  
+把握好使用时机，你只有一次机会  
+
+- **飞翔(`1x`)**  
+给予翅膀，直至死亡  
+你的血量被限制最高为`500hp`  
+你感染的人类会被传送回TP起点  
+当你太靠近触发当前关卡终点的时候，你也会被传送回TP起点  
+通过看向的方向和使用WASD进行飞行  
+（你的飞行推动力很慢）  
+
+- **狂风(`10s|5x`)**  
+在你看的方向生成一股狂风  
+狂风将人类推开  
+它能穿过墙壁  
+
+- **吸引者(`10s|5x`)**  
+在你看的方向生成一束又长又细的引力光束  
+光束会用一股力量将触碰到的人类拉向你  
+它会在`2s`后产生拉人的力量  
+它会在拉到人时造成`21`点伤害  
+
+- **石头(`3s|10x`)**  
+扔出一块石头对人类造成伤害  
+石头会朝你的看向的方向抛出  
+触碰人类造成 `29` 点伤害  
+
+- **伪装者(`1x`)**  
+伪装成人类形态，持续 `15s`  
+使用时你会随机传送到一个人类身边（并获得 `5s` 的无敌时间）  
+变身成人的状态下无法感染人类  
+（但是人类可以对你造成伤害）  
+变身状态结束后，你可以感染人类（感染的人类会被传送回到出生点）  
+你的hp会动态限制，直到你死去  
+
+- **破坏锤(`3s|5x`)**  
+砸碎你面前的地图方块  
+（半径较小，需要精确使用）  
+摧毁附近的人类物品  
+对人类造成轻微的范围伤害  
+打破的地图方块会在 `7s` 后变红并掉落  
+僵尸跳过被破坏的区域会受到大量的减速效果`10s`（在方块掉落后 `7s` 会消失）  
+在结局关的开始阶段不可用  
+
+- **维度裂隙(`1x`)**  
+创造一个传送门捷径  
+第一次使用：创建终点传送门（小）  
+第二次使用：创建入口传送门（大）  
+传送门会在第一次使用后的 100s 后消失  
+用它来帮助你的僵尸队友前进  
+不能在断口中间使用第一次来创造出口  
+当入口靠近主传送点时入口传送门将被锁定  
 
 ## 9. 陷阱地块
 
 ![TRAPS](images/TRAPSTILES.png)  
-陷阱地块通常有三种类型  
+陷阱地块通常有三种类型，如果在下落到虚空的途中受到了陷阱的影响，可能会导致直接去世。  
 
 1. Traps spawn
 2. Traps vicinity
@@ -350,7 +384,8 @@ Entry becomes locked when too close to main-TP
 
 - **kart**  
 ![KART](images/KRAT.png)  
-陷阱卡丁车，人类和僵尸都能进入。僵尸进入会触发圣战模式，碰到人就自爆。
+陷阱卡丁车，人类和僵尸都能进入。僵尸进入会触发圣战模式，碰到人就自爆。  
+*Crazykart*  
 操作方法(仅限鼠标操作)：
   - 向最头顶看可以跳跃
   - 向上看/高于中心高度加速
@@ -405,7 +440,7 @@ Entry becomes locked when too close to main-TP
 捕人器，人类踩上去-69hp顺带无法行动10s
 - **pizza**  
 ![pizza](images/PIZZA.png)  
-*THE PIZZA IS AGGRESSIVE*  
+*[THE PIZZA IS AGGRESSIVE](https://youtu.be/LB871SVYMhI?t=49)*  
 别管是什么陷阱了，不知道看不懂的东西别乱碰？？？不知道看不懂的东西别乱碰？？？不知道看不懂的东西别乱碰？？？
 - **chatter curse**  
 ![curse](images/CHATTER_CURSE.png)  
@@ -471,9 +506,9 @@ Entry becomes locked when too close to main-TP
   - "i did not cum on my cat"
 - **spikes**  
 ![SPIKES](images/spike.png)  
-各种游戏里面必不可少的经典款尖刺。
-以150速度水平触碰会-23hp
-以50速度垂直触碰会-132hp
+各种游戏里面必不可少的经典款尖刺。  
+以150速度水平触碰会-23hp  
+以50速度垂直触碰会-132hp  
 - **banana**  
 ![banana](images/BANANA.png)  
 可爱的香蕉皮，但是你踩上去自己转个五圈

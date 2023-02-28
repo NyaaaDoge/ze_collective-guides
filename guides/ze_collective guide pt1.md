@@ -32,13 +32,13 @@ This guide by [NyaaaDoge](https://steamcommunity.com/id/NyaaaDoge/) (STEAM_1:1:5
 
 ![INTRO](images/INTRO.png)
   
-CS:GO 僵尸逃跑[^僵尸逃跑模式]地图 ze_collective 是 Luffaren 创作地图内核、玩家创造大部分主要关卡的一张近似于随机生成的僵尸逃跑地图。你可以简单理解为ze中的 *Roguelike* 模式，地图流程都是基于随机生成的关卡进行的。此指南旨在介绍 ze_collective[^ze_collective] 的部分内容，便于玩家在地图中获得更好的游戏体验，同时激发有想法的玩家去使用[ze_collective关卡创作工具](http://www.luffaren.com/misc/PixelPaint/pixel-paint-master/index.php)去创造自己心目中的关卡。本指南目前只有一个人编写，如有错误请大胆指出，感激不尽。  
+CS:GO 僵尸逃跑[^僵尸逃跑模式]地图 ze_collective 是 Luffaren 创作地图内核、玩家创造大部分主要关卡的一张近似于随机生成的僵尸逃跑地图。你可以简单理解为ze中的 *Roguelike* 模式，地图流程都是基于随机生成的关卡进行的。此指南旨在介绍 ze_collective[^ze_collective] 的部分内容，便于玩家在地图中获得更好的游戏体验，同时激发有想法的玩家去使用[ze_collective关卡创作工具](http://www.luffaren.com/misc/PixelPaint/pixel-paint-master/index.php)去创造自己心目中的关卡。本指南目前只有一个人编写，如有错误请大胆指出，感激不尽，如果您认为需要补充或者改正，可以联系我或者发Issue，当然直接发PR也是可以的。  
 ![CREATEMAP](images/CREATEYOURMAP.jpg)
   
 **[前往Gamebanana下载该地图](https://gamebanana.com/mods/395733)**
 
 [^僵尸逃跑模式]: 英文全称 Zombie Escape，主要的游玩方式就是人类需要使用尽可能多的手段阻止僵尸 感染/击破 人类，僵尸需要用各种方式阻止人类逃跑，包括但不限于 感染/击破 人类。人类躲避僵尸进行逃跑通常会有终点，一般情况下到达终点 躲避/消灭 所有僵尸即可获得游戏的胜利。
-[^ze_collective]: 编写此指南的时候地图版本为v1_9，其中的`数值`可能会根据版本不同而改变。
+[^ze_collective]: 编写此指南的时候地图版本为 v1_9，其中的`数值`可能会根据版本不同而改变。
 
 ## 3. 地图基本说明
 
@@ -76,8 +76,8 @@ CS:GO 僵尸逃跑[^僵尸逃跑模式]地图 ze_collective 是 Luffaren 创作�
 | 关卡 | 事件刷新保底概率(%) | 未触发事件增加概率(%) | 事件CD最大值(levels) | 延时门打开时间(sec) | 开关门打开用时(sec) | 障碍物耐久(倍) | 有害液体伤害 | 陷阱地块产生陷阱概率(%) | 初始ZM物品 |
 |---|---|---|---|---|---|---|---|---|---|
 | stage 1 | 15 | 5 | 5 | 2 | 0 | 0.5 | 4 | 20 | 2 |
-| stage 2 | 20 | 5 | 4 | 4 | 2 | 0.75  | 9  | 40 | 3 |
-| stage 3 | 25  | 5 | 3 |  6 | 4 | 1.0 | 14 | 60 | 4 |
+| stage 2 | 20 | 5 | 4 | 4 | 2 | 0.75  | 9 | 40 | 3 |
+| stage 3 | 25  | 5 | 3 | 6 | 4 | 1.0 | 14 | 60 | 4 |
 | stage 4 | 30  | 10 | 3 | 8 | 6 | 1.5 | 19 | 80 | 5 |
 | stage infinite| 15 | 5 | 5 | 5 | 0 | 0.8 | 9 | 30 | 5 |
 
@@ -103,7 +103,7 @@ Boss直接触碰人类造成高额伤害，Boss有如下技能：
 人类也会根据地图池关卡的总数增加对应的伤害倍率。  
 人类对Boss的伤害倍率 = 1.00(无限关为 1.50) + 当前地图池关卡的总数\*0.0001（最多增加2.0）  
 
-> 关于Finale：20s生成到电梯门口，15s电梯门开（4s开完），15s电梯门关（4s延迟门），再过15s电梯门开。进入低重力区域需要寻找各种平台往高处飞一直到最顶端的电梯上，可以一格一格跳，也可以一次跳两格。
+> 关于Finale：生成需要差不多20s到电梯门口，15s电梯门开（4s开完），15s电梯门关（4s延迟门），再过15s电梯门开。人类需要进入低重力区域，寻找各种平台往高处飞一直到最顶端的电梯上乘坐电梯，可以一格一格跳，也可以一次跳两格。电梯往上升到Boss战平台。
 ![FINALELOWGRAV](images/FINALELOWGRA1.jpg)
 > 等电梯上升后抬头躲避天坠碎片，碎片会对人类造成伤害。![DEBIRS](images/FINALERISING.jpg)电梯到顶10s后Boss苏醒且可被攻击，进入Boss战。普通Finale Boss打完Boss大概18s落地到第一个stage进行Finale Endrun。  
 > 普通Finale Endrun会关闭各种陷阱地块陷阱的刷新，通常Endrun不会刷新大部分可交互元素，专心寻找逃亡路即可。逃亡路会一直有天坠掉落方块碎片，并且摔下虚空直接死亡，没有假摔机会。 一直到最后金字塔守40s，神风飞机的触发延迟时间是15s（出现"YOU REACHED THE END"文本后）。玩家到达金字塔电梯后会有延迟15s刷新神风飞机。电梯上升，僵尸死亡，人类胜利。  
@@ -132,7 +132,7 @@ Boss直接触碰人类造成高额伤害，Boss有如下技能：
 它放到游戏里面是这样的  
 ![Turnabout](images/Turnabout.png)  
 
-首先你需要了解 开始/结束 颜色地块。
+那么我们看到小地图信息应该怎么办呢？首先你需要了解 开始/结束 颜色地块。
 它的颜色是这样![START_END](images/START_END_TILE.png)的，有了他你才能知道哪里是关卡的起点与终点。需要提及的一点就是，起点色块永远并且一定是在小地图的最左侧，你对小地图的阅读顺序应该是从左往右寻找给断后部队撤退的那条路。贴门触发玩家应该寻找触发终点的那条路，同时建议触发者触发终点前观察大部分玩家所在的位置和情况，贸然触发终点容易导致人类受到损失。![START_END_REFERENCE](images/reference_start_end.png)  
 如果关卡设置了结束按钮![ENDBUTTONTILE](images/ENDBUTTONTILE.png)，指示终点的圈会从默认的紫色（触碰即可触发终点）变成红色（需要按下所有紫色的按钮才能触发终点）  ![ENDRED](images/ENDBUTTON.png)  
 按下所有的这些紫色的按钮即可触发终点  
