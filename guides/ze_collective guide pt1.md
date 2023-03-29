@@ -30,7 +30,7 @@ This guide by [NyaaaDoge](https://steamcommunity.com/id/NyaaaDoge/) (STEAM_1:1:5
 
 ## 2. 前言
 
-![INTRO](images/INTRO.png)
+![INTRO](images/INTRO.jpg)
   
 CS:GO 僵尸逃跑[^僵尸逃跑模式]地图 ze_collective 是 Luffaren 创作地图内核、玩家创造大部分主要关卡的一张近似于随机生成的僵尸逃跑地图。你可以简单理解为ze中的 *Roguelike* 模式，地图流程都是基于随机生成的关卡进行的。此指南旨在介绍 ze_collective[^ze_collective] 的部分内容，便于玩家在地图中获得更好的游戏体验，同时激发有想法的玩家去使用[ze_collective关卡创作工具](http://www.luffaren.com/misc/PixelPaint/pixel-paint-master/index.php)去创造自己心目中的关卡。本指南目前只有一个人编写，如有错误请大胆指出，感激不尽，如果您认为需要补充或者改正，可以联系我或者发Issue，当然直接发PR也是可以的。  
 ![CREATEMAP](images/CREATEYOURMAP.jpg)
@@ -130,13 +130,13 @@ Boss直接触碰人类造成高额伤害，Boss有如下技能：
 哥们随便抽一张minimap，你能读出其中的关键信息吗？  
 ![PIXELSTAGE](images/PIXEL-STAGE.png)  
 它放到游戏里面是这样的  
-![Turnabout](images/Turnabout.png)  
+![Turnabout](images/Turnabout.jpg)  
 
 那么我们看到小地图信息应该怎么办呢？首先你需要了解 开始/结束 颜色地块。
 它的颜色是这样![START_END](images/START_END_TILE.png)的，有了他你才能知道哪里是关卡的起点与终点。需要提及的一点就是，起点色块永远并且一定是在小地图的最左侧，你对小地图的阅读顺序应该是从左往右寻找给断后部队撤退的那条路。贴门触发玩家应该寻找触发终点的那条路，同时建议触发者触发终点前观察大部分玩家所在的位置和情况，贸然触发终点容易导致人类受到损失。![START_END_REFERENCE](images/reference_start_end.png)  
-如果关卡设置了结束按钮![ENDBUTTONTILE](images/ENDBUTTONTILE.png)，指示终点的圈会从默认的紫色（触碰即可触发终点）变成红色（需要按下所有紫色的按钮才能触发终点）  ![ENDRED](images/ENDBUTTON.png)  
+如果关卡设置了结束按钮![ENDBUTTONTILE](images/ENDBUTTONTILE.png)，指示终点的圈会从默认的紫色（触碰即可触发终点）变成红色（需要按下所有紫色的按钮才能触发终点）  ![ENDRED](images/ENDBUTTON.jpg)  
 按下所有的这些紫色的按钮即可触发终点  
-![ENDBUTTONS](images/ENDBUTTON2.png)
+![ENDBUTTONS](images/ENDBUTTON2.jpg)
 
 ### 5.2 道路和地板色块
 

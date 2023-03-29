@@ -13,7 +13,7 @@ This guide by [NyaaaDoge](https://steamcommunity.com/id/NyaaaDoge/) (STEAM_1:1:5
     - [7.1 事件刷新机制](#71-事件刷新机制)
     - [7.2 事件列表](#72-事件列表)
   - [8. 地图物品](#8-地图物品)
-    - [8.1 (未翻译)人类物品 HUMAN](#81-未翻译人类物品-human)
+    - [8.1 人类物品 HUMAN](#81-人类物品-human)
     - [8.2 僵尸物品 ZOMBIE](#82-僵尸物品-zombie)
   - [9. 陷阱地块](#9-陷阱地块)
     - [9.1 Traps spawn](#91-traps-spawn)
@@ -74,33 +74,34 @@ Finale的主题是混乱的，它糅合了所有的主题。
 ### 7.2 事件列表  
 
 - **PIZZA OF DOOM**  
-![PIZZAOFDOOM](images/PIZZADOOM.png)  
+![PIZZAOFDOOM](images/PIZZADOOM.jpg)  
 披萨从天而降，开枪或被毁灭。
-基本血量500，每个人类增加1000血。
+基本血量500，每个人类增加1000血。  
+*[THE PIZZA IS AGGRESSIVE](https://youtu.be/LB871SVYMhI?t=49)*  
 - **PLEDGE**  
-![PLEDGE](images/PLEDGE.png)  
+![PLEDGE](images/PLEDGE.jpg)  
 我宣誓为collective尽一份力！  
 `i pledge to do my part for the collective`  
 在聊天框输入这段话即可。未宣誓者将每秒流失2hp直到去世。  
-未宣誓者之死  
+*未宣誓者之死*  
 *`NyaaaDoge did not state the pledge`*  
 - **KAMIKAZE**  
-![BANZAI](images/BANZAI.png) ![BANZAI2](images/BANZAI2.png)  
+![BANZAI](images/BANZAI.jpg) ![BANZAI2](images/BANZAI2.jpg)  
 将母体僵尸选为神风飞机的驾驶员以自爆的方式冲向人类，人类需要将其击坠或躲在掩体之后。初始血量250，每一个人类增加50血。
 - **BEAMS**  
-![BEAMGRID](images/BEAMS.png)  
+![BEAMGRID](images/BEAMS.jpg)  
 天坠激光会从人类头上坠落。钻空隙躲避，碰到直接秒杀。
 - **WORLD EATER**  
-![WORLDEATER](images/WORLDEATERVAUFF.png)  
+![WORLDEATER](images/WORLDEATERVAUFF.jpg)  
 天上有一张大脸，射爆他，不然他就一直看着你。吞噬世界。如果没打掉，他会一直跟着人类  
 大脸初始血量1000，每个人类加500血，每个僵尸加250血
 - **THICK FOG**  
-![THICKFOG](images/THICKFOG.png)  
+![THICKFOG](images/THICKFOG.jpg)  
 人类的视野暂时受浓厚迷雾阻碍，持续40s。
 - **BLOODLUST**  
 渴血事件。人类很饥渴（每次掉2hp），需要射爆僵尸才能回血（每次射击僵尸回3hp），持续60s。
 - **DEBRIS**  
-![DEBRIS](images/DEBRIS.png)  
+![DEBRIS](images/DEBRIS.jpg)  
 天上掉下各种地图方块的碎片，每块造成19hp，持续60s
 - **LOW GRAV**  
 人类获得20s的低重力，20s后直接切换成正常重力，人类要小心最后不要摔死了。
@@ -108,7 +109,7 @@ Finale的主题是混乱的，它糅合了所有的主题。
 ![COLLAPSE](images/COLLAPSE.gif)  
 之前的关卡在逐渐分崩离析，该关卡内的所有的方块都会坍塌。
 - **PHASING**  
-![PHASING](images/PHASEING.png)  
+![PHASING](images/PHASEING.jpg)  
 人类的眼睛进行相位转移，参透世界，地图方块变得透明。持续20s  
 *小心行事*
 - **SILENCE**  
@@ -122,11 +123,11 @@ Finale的主题是混乱的，它糅合了所有的主题。
 ![BIGNADES](images/BIGNADE.gif)  
 人类手雷暂时获得增益40s，期间手雷变成大脸 ~~(和天降大脸一个模型VAUFF)~~ ，每颗雷对僵尸造成5000伤害，手雷伤害范围增大，也会有高击退效果。对Boss也能造成5000伤害，同时会有60%的几率眩晕Boss 5s。
 - **DOORHUG BOMB**  
-![DOORHUGBOMB](images/DOORHUGBOMB.png)  
+![DOORHUGBOMB](images/DOORHUGBOMB.jpg)  
 贴门炸弹，通常只会在下张地图生成的时候产生该事件，左下角提示出现1.2s后爆炸，贴近伤害很高。聪明的人贴门都会离终点光圈至少2格远以上，虽然还是会受到些许伤害，但没有那么致命。
 *断后部队不要怕，死的都是贴门的*
 - **DISTORT**  
-![DISTORT](images/DISTORT.png)  
+![DISTORT](images/DISTORT.jpg)  
 人类全体获得扭曲视线，持续15s。  
 *我瞎了*
 
@@ -135,14 +136,14 @@ Finale的主题是混乱的，它糅合了所有的主题。
 大部分情况下物品都有使用次数和限制。详细请查看拾取后的说明。物品最多存在30个，如果超过该数量新的关卡不会产生新的物品。  
 如果关卡里面没有安排 人类/僵尸 物品生成点，且物品刷新机制认为需要生成神器的时候人类或僵尸物品会在关卡的两个起点色块![STARTENDTILE](images/START_END_TILE.png)刷新。  
 
-### 8.1 (未翻译)人类物品 HUMAN
+### 8.1 人类物品 HUMAN
 
-- **屠龙巨剑(`0s`)**  
+- **猎龙巨剑(`0s`)**  
 它太过巨大，以至于难以称之为一把剑……  
 在下落时攻击，可以使出劈斩攻击  
 使用它会对你的身体造成损伤  
 当你的体力太弱 (`5hp`) 时，会无法继续使用它  
-血液积聚附着使其沉重，难以挥舞战斗  
+血渍积聚附着使其沉重，难以挥舞战斗  
 水元素水晶可以洗去巨剑上的血迹  
 火元素水晶可以使其暂时增强  
 
@@ -166,7 +167,7 @@ Finale的主题是混乱的，它糅合了所有的主题。
 他们的注意力会被吸引到电视上  
 持续`14s`  
 可以眩晕Boss  
-*[Bill Nye The Science Guy - Theme](https://youtu.be/nDN7M0J3HXc?t=16)*  
+*[Bill Nye The Science Guy - Theme](https://youtu.be/nDN7M0J3HXc?t=17)*  
 
 [^Bill_Nye]: Bill Nye（全名William Sanford Nye）是一位美国科学家、工程师、教育家和电视名人，被称为“科学家先生”。他在90年代主持的科学教育电视节目[《Bill Nye the Science Guy》](https://zh.wikipedia.org/wiki/%E6%AF%94%E7%88%BE%E6%95%99%E7%A7%91%E5%AD%B8)在美国和其他地区广受欢迎，该节目旨在为年轻观众介绍科学概念和实验。Bill Nye在科学普及和科学教育方面做出了许多贡献，他经常在电视上和公众场合演讲，以鼓励年轻人对科学感兴趣并学习科学知识。
 
@@ -179,6 +180,7 @@ Finale的主题是混乱的，它糅合了所有的主题。
 同一块花生酱不能减速同一个僵尸两次  
 减速效果可以叠加  
 可以在生成时伤害/眩晕Boss  
+*[同ze_toaster中的花生酱](https://gamebanana.com/mods/79907)*  
 
 - **阔剑地雷(`10x`)**  
 在你的面前部署阔剑地雷  
@@ -191,17 +193,19 @@ Finale的主题是混乱的，它糅合了所有的主题。
 允许背一个人在你身上(他们必须对鞍座按下E来上/下鞍)  
 如果你死亡/丢掉匕首，乘客会被迫离开  
 乘客下鞍时会获得一个跳跃/加速度提升  
-(可以以此进行一个类似于“耀西二段跳/boost-jump”的跳跃)给人一段愉快的载人兜风之旅！  
+(可以以此进行一个类似于“耀西二段跳/boost-jump”的跳跃)  
+给人带来一段愉快的载人兜风之旅！  
+![YOSHIJUMP](images/Yoshi_Double_Jump.webp)  
 
-- **骇客侠(`1x`)**  
+- **黑客(`1x`)**  
 获得10秒的自瞄+无限弹药  
 只需不断射击就能轻松获得一次次的击杀  
 附近/瞄准的僵尸成为一击必杀  
 附近的僵尸会被透视功能标记  
 可以伤害/眩晕Boss  
 
-- **Bhop激素(`30.00f`)**  
-为自己注射激素，实现自动连跳！  
+- **连跳激素(`30.00f`)**  
+为自己注射Bhop激素，实现自动连跳！  
 有限的剂量导致其有使用限制  
 使用 +use/E 来开关  
 每次激活使用将消耗`2.00f`  
@@ -245,9 +249,9 @@ Finale的主题是混乱的，它糅合了所有的主题。
 不能在断口中间第二次使用来创造出口  
 
 - **风暴之刃(`150s`)**  
-使用跨维度的次元斩击定格和削弱僵尸  
+使用跨维度的次元斩击来定身和削弱僵尸  
 僵尸的生命值降至当前值的`2%`  
-它只会在使用的第一时间内定格其附近的僵尸  
+它只会在使用的第一时间内定身其附近的僵尸  
 当次元斩结束后，僵尸的生命值下降，同时附近的僵尸会被减速`15s`  
 可以伤害/眩晕Boss  
 *[I AM THE STORM THAT IS APPROACHING](https://youtu.be/NOZONW-UK0w?t=24)*  
@@ -281,30 +285,30 @@ Finale的主题是混乱的，它糅合了所有的主题。
 
 - **鱿鱼(`1x`)**  
 投出一只鱿鱼，击中地面后会喷墨  
-鱿鱼会沿着你的视线方向扔出  
+鱿鱼会沿着你正在看的方向扔出  
 它也可以在墙上弹射  
 喷墨会致盲和减速附近的人类  
 被喷墨的人类 (`10s`) 无法使用物品  
 
-- **披萨烘焙师(`10s|3x`)**  
-在你的视线方向生成一块披萨  
-接触到人类会一击必杀  
+- **披萨师(`10s|3x`)**  
+在你正在看的方向上生成一块移动的披萨  
+接触到的人类会被一击必杀  
 披萨能穿过墙  
 *[THE PIZZA IS AGGRESSIVE](https://youtu.be/LB871SVYMhI?t=49)*  
 
 - **投掷手(`1x`)**  
 将人类从你身边大力投掷开  
 把他们推下地图边缘  
-或者把他们从防守点中投掷出来  
+或者把他们从防守点中抛出来  
 
 - **投弹手(`10s|3x`)**  
 扔出一个炸弹，在 `5s` 后爆炸  
-炸弹沿着你的视线方向投出  
+炸弹沿着你正在看的方向投出  
 造成 AOE/爆炸伤害  
 
 - **咆哮(`1x`)**  
 用咆哮将附近的僵尸向前推  
-推力沿着你的面视的方向推  
+推力会沿着你的看的方向向前推  
 出其不意地攻击人类防线！  
 它也能治疗你附近的僵尸，使其恢复至 `10000hp`  
 
@@ -328,19 +332,20 @@ Finale的主题是混乱的，它糅合了所有的主题。
 （你的飞行推动力很慢）  
 
 - **狂风(`10s|5x`)**  
-在你看的方向生成一股狂风  
+在你正在看的方向上生成一股狂风  
 狂风将人类推开  
 它能穿过墙壁  
 
-- **吸引者(`10s|5x`)**  
-在你看的方向生成一束又长又细的引力光束  
+- **鞭钩(`10s|5x`)**  
+在你正在看的方向上生成一条又长又细的引力鞭子  
 光束会用一股力量将触碰到的人类拉向你  
 它会在`2s`后产生拉人的力量  
 它会在拉到人时造成`21`点伤害  
+*“给我过来！” 是真人快打系列里面 蝎子 丢出苦无击中对手后的的一句经典的标志性台词 "[Get Over Here!](https://youtu.be/kwBhReFJkr8?t=33)"*
 
 - **石头(`3s|10x`)**  
 扔出一块石头对人类造成伤害  
-石头会朝你的看向的方向抛出  
+石头会朝你正在看的方向抛出  
 触碰人类造成 `29` 点伤害  
 
 - **伪装者(`1x`)**  
@@ -350,15 +355,17 @@ Finale的主题是混乱的，它糅合了所有的主题。
 （但是人类可以对你造成伤害）  
 变身状态结束后，你可以感染人类（感染的人类会被传送回到出生点）  
 你的hp会动态限制，直到你死去  
+*[When the imposter is sus!](https://www.youtube.com/watch?v=0bZ0hkiIKt0) ☜ඞ*  
 
 - **破坏锤(`3s|5x`)**  
-砸碎你面前的地图方块  
+破坏你面前的地图方块（复数）  
 （半径较小，需要精确使用）  
 摧毁附近的人类物品  
 对人类造成轻微的范围伤害  
 打破的地图方块会在 `7s` 后变红并掉落  
 僵尸跳过被破坏的区域会受到大量的减速效果`10s`（在方块掉落后 `7s` 会消失）  
 在结局关的开始阶段不可用  
+*真人快打系列里面 绍康（Shao Kahn） 的标志性武器是天启之锤*  
 
 - **维度裂隙(`1x`)**  
 创造一个传送门捷径  
@@ -383,9 +390,9 @@ Finale的主题是混乱的，它糅合了所有的主题。
 这个地块会生成以下陷阱
 
 - **kart**  
-![KART](images/KRAT.png)  
+![KART](images/KART.jpg)  
 陷阱卡丁车，人类和僵尸都能进入。僵尸进入会触发圣战模式，碰到人就自爆。  
-*Crazykart*  
+*[Crazykart](https://www.youtube.com/watch?v=MaRH43xdgSo)*  
 操作方法(仅限鼠标操作)：
   - 向最头顶看可以跳跃
   - 向上看/高于中心高度加速
@@ -393,36 +400,39 @@ Finale的主题是混乱的，它糅合了所有的主题。
   - 向侧面看转向[以自身卡丁车为中心旋转]
   - 向最底下看下车
 - **thigh spider**  
-![THIGHSPIDER](images/NPC.png)  
+![THIGHSPIDER](images/NPC.jpg)  
 小腿腿NPC活蹦乱跳，粘在人类身上每咬一下造成3hp伤害
 初始血量300，每个人类增加100血
 - **button mimic**  
-![buttonmimic](images/BUTTONMIMIC.png)  
+![buttonmimic](images/BUTTONMIMIC.jpg)  
 红色的拟态按钮，谁按谁上当
 - **explosive barrel**  
-![explosive](images/EXPLOSIVE.png)  
+![explosive](images/EXPLOSIVE.jpg)  
 炸药桶，射击1到30次之间会爆炸。
 - **slot machine**  
+![slotmachine](images/SLOTMACHINE.jpg)
 老虎机，10%几率获胜获得150hp，每次输扣18hp。
 使用次数在1到20次之间会爆炸，有40%的几率产生小老虎机神器。
 - **mimic**  
-![mimic](images/MIMIC.png)  
+![mimic](images/MIMIC.jpg)  
 拟态神器，只要不去触碰就不会触发陷阱，碰到就原地去世  
-*Tips: 你可以用 E-Pick 的方法检验神器的真伪，但是E-Pick仅限首次拾取神器有防 E-Pick 滥用机制，二手神器就没有这个保护机制了*  
+*Tips: v1_9 之后你可以用 E-Pick 的方法检验神器的真伪，但是E-Pick仅限首次拾取神器有防 E-Pick 滥用机制，二手神器就没有这个保护机制了*  
 
 ### 9.2 Traps vicinity
 
 这个地块会产生以下的范围型陷阱  
-![TRAPSVICINITY](images/TRAPS.png)  
 
 - **bomb**  
-8秒倒计时的炸弹。*Back! get back!*
+![BOMB](images/BOMB.jpg)  
+8秒倒计时的炸弹。*Back! get back!*  
 - **guster**  
+![GUSTER](images/GUSTER.jpg)  
 效果和ZM风一样，会把人吹开
 - **flinger**  
-效果和ZM震荡一样，会把人震开
+![FLINGER](images/FLINGER.jpg)  
+效果和ZM投掷手一样，会把人震开
 - **black hole**  
-![BLACKHOLE](images/BLACKHOLE.png)  
+![BLACKHOLE](images/BLACKHOLE.jpg)  
 生成一个黑洞，有强大的引力吸引人类，人类碰到其中心会去世，吸引一段时间后会消失
 
 ### 9.3 Traps step
@@ -430,20 +440,20 @@ Finale的主题是混乱的，它糅合了所有的主题。
 这个地块会产生以下陷阱，只有玩家踩到该地块上才会触发
 
 - **trap floor**  
-![trapfloor](images/TRAPFLOOR.png)  
+![trapfloor](images/TRAPFLOOR.jpg)  
 踩上去地板会消失，特征是地块上面有裂痕
 - **landmine**  
-![landmine](images/LANDMINE.png)  
+![landmine](images/LANDMINE.jpg)  
 *有地雷！小心脚下！*
 - **bear trap**  
 ![beartrap](images/BEARTRAP.jpg)  
 捕人器，人类踩上去-69hp顺带无法行动10s
 - **pizza**  
-![pizza](images/PIZZA.png)  
+![pizza](images/PIZZA.jpg)  
 *[THE PIZZA IS AGGRESSIVE](https://youtu.be/LB871SVYMhI?t=49)*  
 别管是什么陷阱了，不知道看不懂的东西别乱碰？？？不知道看不懂的东西别乱碰？？？不知道看不懂的东西别乱碰？？？
 - **chatter curse**  
-![curse](images/CHATTER_CURSE.png)  
+![curse](images/CHATTER_CURSE.jpg)  
 地上会生成一个隐约可见的狮子头，人类踩一踩触发聊天扣字诅咒。每次损失2hp。
 想解开诅咒需要在聊天框中输入屏幕显示的那段话。下面是所有可能的语句。
   - "i just farted really loud lol"
@@ -505,12 +515,12 @@ Finale的主题是混乱的，它糅合了所有的主题。
   - "these zombie models make me horny"
   - "i did not cum on my cat"
 - **spikes**  
-![SPIKES](images/spike.png)  
+![SPIKES](images/spike.jpg)  
 各种游戏里面必不可少的经典款尖刺。  
 以150速度水平触碰会-23hp  
 以50速度垂直触碰会-132hp  
 - **banana**  
-![banana](images/BANANA.png)  
+![banana](images/BANANA.jpg)  
 可爱的香蕉皮，但是你踩上去自己转个五圈
 
 ## 10. 一些小彩蛋
@@ -539,12 +549,12 @@ Finale的主题是混乱的，它糅合了所有的主题。
   - ze_collective_v1_9
 
 - Steam/Discord 音效恶搞  
-你可能会在游玩过程中听到自己Steam/Discord被敲打的音效，但是你跑出去看并没有被敲打！
+你可能会在游玩过程中听到自己Steam/Discord被敲打等音效，但是你跑出去看并没有被敲打！  
 最少需要5位玩家才能触发这个小彩蛋  
-*只是一个音效播放恶作剧*
+*你上当了！只是一个音效播放恶作剧*
 
 - 神器Combo  
-按照 `土-火-凤-水` 的顺序依次使用元素水晶，会召唤一个元素超人。需要注意的是这个超人的位置是按照土开始释放的位置来确定的，这个combo的间隔是7s。超人也会攻击boss。
+按照 `土-火-风-水` 的顺序依次使用元素水晶，会召唤一个地球超人。需要注意的是这个超人的位置是按照土开始释放的位置来确定的，这个combo的间隔是7s。超人也会攻击Boss。
 
 ## 11. 写在最后
 
