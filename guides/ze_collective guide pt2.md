@@ -40,6 +40,7 @@ ze_collective设置了9种主题。不同的主题会有不同的难度和外貌
 ![factory](images/factory.jpg)  
 - temple  
 ![temple](images/temple.jpg)  
+*沙庙的关卡装饰物箱子上的猫的图案跟Vauff的头像非常相似*  
 - nature  
 ![nature](images/nature.jpg)  
 - hell  
@@ -81,10 +82,10 @@ Finale的主题是混乱的，它糅合了所有的主题。
 *[THE PIZZA IS AGGRESSIVE](https://youtu.be/LB871SVYMhI?t=49)*  
 - **PLEDGE**  
 ![PLEDGE](images/PLEDGE.jpg)  
-我宣誓为collective尽一份力！  
+我宣誓为collective尽己所能！  
 `i pledge to do my part for the collective`  
-在聊天框输入这段话即可。未宣誓者将每秒流失2hp直到去世。  
-*未宣誓者之死*  
+人类需要在聊天框输入 **i pledge to do my part for the collective** 这段话。未宣誓者将每秒流失2hp直到去世。  
+*未宣誓者之死：没有输入誓言的玩家死亡会有如下提示*  
 *`NyaaaDoge did not state the pledge`*  
 - **KAMIKAZE**  
 ![BANZAI](images/BANZAI.jpg) ![BANZAI2](images/BANZAI2.jpg)  
@@ -94,7 +95,7 @@ Finale的主题是混乱的，它糅合了所有的主题。
 天坠激光会从人类头上坠落。钻空隙躲避，碰到直接秒杀。
 - **WORLD EATER**  
 ![WORLDEATER](images/WORLDEATERVAUFF.jpg)  
-天上有一张大脸，射爆他，不然他就一直看着你。吞噬世界。如果没打掉，他会一直跟着人类  
+天上有一张大脸，射爆他，不然他就一直看着你。吞噬世界。如果没打掉，他会一直跟着人类，吞噬碰到的所有地块。  
 大脸初始血量1000，每个人类加500血，每个僵尸加250血
 - **THICK FOG**  
 ![THICKFOG](images/THICKFOG.jpg)  
@@ -114,7 +115,8 @@ Finale的主题是混乱的，它糅合了所有的主题。
 人类的眼睛进行相位转移，参透世界，地图方块变得透明。持续20s  
 *小心行事*
 - **SILENCE**  
-人类全体静音15s。15s逐渐消失，15s完全静音，10s恢复至正常。
+人类全体静音15s。15s逐渐消失，15s完全静音，10s恢复至正常。  
+*Hello?*
 - **WEAPON JAM**  
 武器卡壳9s，期间会不停上子弹。
 - **WALLBREAK**  
@@ -182,7 +184,7 @@ Finale的主题是混乱的，它糅合了所有的主题。
 同一块花生酱不能减速同一个僵尸两次  
 减速效果可以叠加  
 可以在生成时伤害/眩晕Boss  
-*[同ze_toaster中的花生酱](https://gamebanana.com/mods/79907)*  
+*同 [ze_toaster](https://gamebanana.com/mods/79907) 中的花生酱*  
 
 - **阔剑地雷(`10x`)**  
 在你的面前部署阔剑地雷  
@@ -270,7 +272,7 @@ Finale的主题是混乱的，它糅合了所有的主题。
 施加一个垂直向上的推力  
 可以结合跳跃来到达格外高的地方  
 
-- **特殊物品 卡丁车**  
+- **特殊物品 - 卡丁车**  
 操作方法(仅限鼠标操作)：
 
   - 向最头顶看可以跳跃
@@ -366,7 +368,7 @@ Finale的主题是混乱的，它糅合了所有的主题。
 僵尸跳过被破坏的区域会受到大量的减速效果`10s`（在方块掉落后 `7s` 会消失）  
 在结局关的开始阶段不可用  
 
-- **空间裂隙(`1x`)**  
+- **ZM 空间裂隙(`1x`)**  
 创造一个传送门捷径  
 第一次使用：创建终点传送门（小）  
 第二次使用：创建入口传送门（大）  
@@ -400,7 +402,7 @@ Finale的主题是混乱的，它糅合了所有的主题。
   - 向最底下看下车
 - **thigh spider**  
 ![THIGHSPIDER](images/NPC.jpg)  
-小腿腿NPC活蹦乱跳，粘在人类身上每咬一下造成3hp伤害
+小腿腿NPC ~~shellbert_despair.mp3~~ 活蹦乱跳，粘在人类身上每咬一下造成3hp伤害
 初始血量300，每个人类增加100血
 - **button mimic**  
 ![buttonmimic](images/BUTTONMIMIC.jpg)  
@@ -578,4 +580,4 @@ ze_collective为一些特殊的小关卡（pixel-stage）设置了一些特别�
 
 ## 11. 写在最后
 
-本指南只介绍了ze_collective中基本的组成部分。如果你想发挥你的想象力为ze_collective出一份力，去看看Luff给的绘画工具吧！笔者写这篇指南的动机是觉得ze_collective这张地图非常有意思，既可以在ze玩到肉鸽like模式，也能用自己的想法简单实现一个关卡，甚至是快速实现部分小关卡的地图原型，难道不觉得很酷吗？这张地图的内核和玩法真的很有意思！即使刨除掉神器部分，其他的要素玩起来也是相当有意思！
+本指南只介绍了ze_collective中基本的组成部分。如果你想发挥你的想象力为ze_collective出一份力，去看看Luff给的绘画工具吧！笔者写这篇指南的动机是觉得ze_collective这张地图非常有意思，既可以在ze玩到肉鸽like模式，也能用自己的想法简单实现一个关卡，甚至是快速实现部分小关卡的地图原型，难道不觉得很酷吗？这张地图的内核和玩法真的很有意思！即使刨除掉神器部分，其他的要素玩起来也是相当有意思！我为collective建设了[一个kook服务器](https://kook.top/5y8r98)，里面可以交流包括但不限于交流collective地图创作等话题！欢迎加入！
